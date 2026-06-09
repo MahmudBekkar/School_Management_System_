@@ -116,5 +116,11 @@ namespace SchoolM
             con.Close();
         }
 
+        private void btnOpenAI_Click(object sender, EventArgs e)
+        {
+            // Open the independent AI Form
+            AIAssistant aiForm = new AIAssistant();
+            aiForm.Show();
+        }
     }
 }

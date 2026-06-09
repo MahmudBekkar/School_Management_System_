@@ -71,5 +71,10 @@ namespace SchoolM
             Dashboard dd = new Dashboard();
             dd.Show();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

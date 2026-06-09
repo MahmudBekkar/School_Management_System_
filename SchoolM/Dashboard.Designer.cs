@@ -33,17 +33,19 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblCount = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.lblCount1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.lblCount2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.lblCount3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnOpenAI = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,35 +106,15 @@
             this.panel3.Size = new System.Drawing.Size(150, 143);
             this.panel3.TabIndex = 3;
             // 
-            // panel4
+            // lblCount
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel4.Controls.Add(this.lblCount1);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(358, 75);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(150, 143);
-            this.panel4.TabIndex = 4;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel5.Controls.Add(this.lblCount2);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Location = new System.Drawing.Point(528, 75);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(150, 143);
-            this.panel5.TabIndex = 5;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel6.Controls.Add(this.lblCount3);
-            this.panel6.Controls.Add(this.label8);
-            this.panel6.Location = new System.Drawing.Point(178, 241);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(150, 143);
-            this.panel6.TabIndex = 6;
+            this.lblCount.AutoSize = true;
+            this.lblCount.Location = new System.Drawing.Point(71, 10);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(14, 16);
+            this.lblCount.TabIndex = 8;
+            this.lblCount.Text = "0";
+            this.lblCount.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -144,24 +126,15 @@
             this.label2.Text = "Students:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // lblCount
+            // panel4
             // 
-            this.lblCount.AutoSize = true;
-            this.lblCount.Location = new System.Drawing.Point(71, 10);
-            this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(14, 16);
-            this.lblCount.TabIndex = 8;
-            this.lblCount.Text = "0";
-            this.lblCount.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 16);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Subject:";
+            this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel4.Controls.Add(this.lblCount1);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Location = new System.Drawing.Point(358, 75);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(150, 143);
+            this.panel4.TabIndex = 4;
             // 
             // lblCount1
             // 
@@ -173,14 +146,24 @@
             this.lblCount1.Text = "0";
             this.lblCount1.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label6
+            // label4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 16);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Teachers:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 16);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Subject:";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel5.Controls.Add(this.lblCount2);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Location = new System.Drawing.Point(528, 75);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(150, 143);
+            this.panel5.TabIndex = 5;
             // 
             // lblCount2
             // 
@@ -191,14 +174,24 @@
             this.lblCount2.TabIndex = 11;
             this.lblCount2.Text = "0";
             // 
-            // label8
+            // label6
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 19);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 16);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Enrollment;";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 16);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Teachers:";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel6.Controls.Add(this.lblCount3);
+            this.panel6.Controls.Add(this.label8);
+            this.panel6.Location = new System.Drawing.Point(178, 241);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(150, 143);
+            this.panel6.TabIndex = 6;
             // 
             // lblCount3
             // 
@@ -209,6 +202,32 @@
             this.lblCount3.TabIndex = 9;
             this.lblCount3.Text = "0";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(73, 16);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Enrollment;";
+            // 
+            // btnOpenAI
+            // 
+            this.btnOpenAI.Location = new System.Drawing.Point(376, 260);
+            this.btnOpenAI.Name = "btnOpenAI";
+            this.btnOpenAI.Size = new System.Drawing.Size(196, 23);
+            this.btnOpenAI.TabIndex = 7;
+            this.btnOpenAI.Text = "AI Assistant";
+            this.btnOpenAI.UseVisualStyleBackColor = true;
+            this.btnOpenAI.Click += new System.EventHandler(this.btnOpenAI_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(380, 289);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(354, 169);
+            this.panel7.TabIndex = 8;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -216,6 +235,8 @@
             this.BackgroundImage = global::SchoolM.Properties.Resources.images__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(802, 458);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.btnOpenAI);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -260,5 +281,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblCount3;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnOpenAI;
+        private System.Windows.Forms.Panel panel7;
     }
 }
